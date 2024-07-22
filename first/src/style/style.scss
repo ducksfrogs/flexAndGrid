@@ -1,16 +1,24 @@
 ul {
     background-color: aqua;
-    height: 140px;
     padding: 20px;
 
+    height: 150px;
     display: flex;
-    
+    align-items: baseline;
 }
 
 li {
     background-color: bisque;
     padding: 10px;
+
+    width: 100px;
     margin: 10px;
     text-align: center;
     list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+li:first-child {
+    padding: 10px;
 }
