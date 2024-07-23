@@ -7,16 +7,29 @@ $color-text-light: #eee;
 
 $width-button: 150px;
 
+@mixin style-linke-text($col) {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $col;
+}
+
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+
 nav {
     margin: 30px;
     background-color: $color-primary;
+
+    @include clearfix;
 }
 
-nav::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 
 .navigation {
 
@@ -36,9 +49,7 @@ nav::after {
         }
 
         a {
-            text-decoration: none;
-            text-transform: uppercase;
-            color: $color-text-dark;
+            @include style-linke-text($color-text-dark);
         }
     }
 }
@@ -81,3 +92,4 @@ nav::after {
 
     }
 }
+
