@@ -1,3 +1,19 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 8;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5;
+}
+
+body {
+    box-sizing: border-box;
+}
+
 ul {
     background-color: aqua;
     padding: 20px;
